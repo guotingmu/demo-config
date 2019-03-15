@@ -1,0 +1,13 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/guotingmu/demo-config/
+          username: guotingmu
+          password: Aa15539286980
+          search-paths: config-repo
