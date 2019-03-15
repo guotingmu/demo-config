@@ -8,6 +8,8 @@ spring:
       server:
         git:
           uri: https://github.com/guotingmu/demo-config/
-          username: guotingmu
-          password: Aa15539286980
+#          username: guotingmu
+#          password: Aa15539286980
+          username: test
+          password: test
           search-paths: config-repo
