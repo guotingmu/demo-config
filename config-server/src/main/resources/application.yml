@@ -8,8 +8,21 @@ spring:
       server:
         git:
           uri: https://github.com/guotingmu/demo-config/
-#          username: guotingmu
-#          password: Aa15539286980
-          username: test
-          password: test
+          username: guotingmu
+          password: Aa15539286980
+#          username: test
+#          password: test
           search-paths: config-repo
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
